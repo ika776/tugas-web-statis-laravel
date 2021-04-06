@@ -13,10 +13,7 @@
 
 use App\Http\Controllers\AuthController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home','HomeController@home');
+Route::get('/','HomeController@home');
 Route::get('/register','AuthController@register');
 Route::post('/welcome','AuthController@welcome');
 
